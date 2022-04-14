@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1CECE"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/celtofarview"
+        android:layout_width="328dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginBottom="574dp"
+        android:text="1. Convert Celcius to Farenheit"
+        android:textColor="#6200EA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fartocelview"
+        android:layout_width="321dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="24dp"
+        android:text="2. Convert Farenheit to Celcius"
+        android:textColor="#6200EA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celtofarview"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <Button
+        android:id="@+id/celtofarbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Here"
+        app:layout_constraintBottom_toTopOf="@+id/fartocelview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/celtofarview"
+        app:layout_constraintVertical_bias="0.445"
+        app:rippleColor="#D50000" />
+
+    <Button
+        android:id="@+id/fartocelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK HERE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fartocelview"
+        app:layout_constraintVertical_bias="0.382"
+        app:rippleColor="#D50000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
